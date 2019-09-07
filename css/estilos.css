@@ -3,17 +3,12 @@
   margin-left: -8px;
   margin-right: -8px; }
 
-body {
-  background: greenyellow; }
-
 .barra-superior {
   background: #0e0702;
   display: -ms-grid;
   display: grid;
   grid-gap: 5px;
-  padding-left: .5rem;
-  padding-right: .5rem;
-  padding-top: 10px; }
+  padding: 10px; }
   .barra-superior .logo {
     display: -ms-grid;
     display: grid;
@@ -62,6 +57,11 @@ body {
         font-size: 18px;
         color: #00e1ff;
         margin-left: 15px; }
+
+.img-cicle {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px; }
 
 @media (min-width: 700px) {
   body {

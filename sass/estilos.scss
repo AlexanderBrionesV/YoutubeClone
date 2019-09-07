@@ -4,6 +4,8 @@ $cl-iconos:rgb(0, 225, 255);
 $cl-letra: rgb(248, 248, 248);
 $cl-ico-blanco:rgb(242, 248, 250);
 // ------------------------
+$lado: 30px;
+// ------------------------
 @import "letras";
 // ------------------------
 .toda-la-ventana {
@@ -13,19 +15,15 @@ $cl-ico-blanco:rgb(242, 248, 250);
     // padding: 10px 0;
 }
 
-body {
-    background: greenyellow;
-    ;
-}
-
 .barra-superior {
     background: $back;
     display: grid;
     // grid-template-columns: 3fr .5fr 2fr;
     grid-gap: 5px;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    padding-top: 10px;
+    // padding-left: .5rem;
+    // padding-right: .5rem;
+    // padding-top: 10px;
+    padding: 10px;
     .logo {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -86,10 +84,23 @@ body {
                 // display: none;
             }
         }
-        .img-cicle {}
+        // .img-cicle {}
     }
 }
 
+.img-cicle {
+    width: $lado;
+    height: $lado;
+    border-radius: $lado/2
+}
+
+// -------------------------nav izquierdo-------------
+// -
+// -
+// -
+// -
+// -
+// -
 // -----------------------LARGE VERSION---------------------------
 @media (min-width:700px) {
     body {
@@ -118,6 +129,7 @@ body {
             .se-va {}
         }
     }
+    // -------------------------nav izquierdo-------------
 }
 
 // -----------------------SHORT VERSION---------------------------
@@ -147,4 +159,5 @@ body {
             }
         }
     }
+    // -------------------------nav izquierdo-------------
 }
