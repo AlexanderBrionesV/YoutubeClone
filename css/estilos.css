@@ -63,9 +63,79 @@
   height: 30px;
   border-radius: 15px; }
 
+.img-rectangulo {
+  width: 210px;
+  height: 120px; }
+
+.no-decor {
+  text-decoration: none;
+  color: #f8f8f8; }
+
+.browser-videos .paquete-horizontal {
+  padding: 30px; }
+  .browser-videos .paquete-horizontal .cabecera-paquete {
+    display: -ms-grid;
+    display: grid;
+    background: #0e0702;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a {
+      font-family: "Asap Condensed", sans-serif;
+      text-decoration: none;
+      font-size: 1.7rem;
+      color: #f8f8f8; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a img {
+        padding-top: 5px; }
+    .browser-videos .paquete-horizontal .cabecera-paquete .mensaje-cabecera {
+      color: #f8f8f8;
+      font-family: "Niramit", sans-serif; }
+    .browser-videos .paquete-horizontal .cabecera-paquete .btn-suscribete {
+      color: #f8f8f8;
+      font-family: "Niramit", sans-serif; }
+  .browser-videos .paquete-horizontal .coleccion-tarjetas-in {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 15px; }
+    .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual {
+      padding: 9px;
+      background: #0e0702; }
+      .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta {
+        display: -ms-grid;
+        display: grid;
+        margin: 5px 0;
+        -ms-grid-rows: 1fr 60px;
+        grid-template-rows: 1fr 60px; }
+        .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta h3 {
+          margin: 3px 0; }
+          .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta h3 a {
+            margin: 5px 0;
+            text-decoration: none;
+            color: #f8f8f8;
+            font-family: "Asap Condensed", sans-serif;
+            font-size: 15px; }
+        .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta .metadatos-canal {
+          text-decoration: none;
+          color: #f8f8f8;
+          font-family: "Niramit", sans-serif; }
+          .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta .metadatos-canal h4 {
+            margin-top: 2px;
+            color: #00e1ff;
+            font-size: 11px; }
+          .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta .metadatos-canal .metadatos-vistas-time {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-rows: 18px 18px;
+            grid-template-rows: 18px 18px;
+            font-size: 11px;
+            margin-top: -18px; }
+
 @media (min-width: 700px) {
   body {
-    background: red; }
+    background: #0e0702;
+    /* rgba(blue, 0.2) */ }
   .barra-superior {
     -ms-grid-columns: 2fr 4fr 3fr;
     grid-template-columns: 2fr 4fr 3fr; }
@@ -85,11 +155,31 @@
       grid-template-columns: 4fr 1fr; }
       .barra-superior .mas-iconos-derecha .solo-iconos-s-d {
         -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr); } }
+        grid-template-columns: repeat(4, 1fr); }
+  .browser-videos .paquete-horizontal .cabecera-paquete {
+    -ms-grid-columns: 3fr 4fr 6fr 2fr;
+    grid-template-columns: 3fr 4fr 6fr 2fr; }
+    .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a img {
+        padding-top: 5px; }
+    .browser-videos .paquete-horizontal .cabecera-paquete .mensaje-cabecera {
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 1;
+      grid-column: 2/3; }
+    .browser-videos .paquete-horizontal .cabecera-paquete .btn-suscribete {
+      -ms-grid-column: 4;
+      -ms-grid-column-span: 1;
+      grid-column: 4/5; }
+  .browser-videos .paquete-horizontal .coleccion-tarjetas-in {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }
 
 @media (max-width: 700px) {
   body {
-    background: blue; }
+    background: #0e0702; }
   .barra-superior {
     -ms-grid-columns: 3fr .5fr 2fr;
     grid-template-columns: 3fr .5fr 2fr; }
@@ -110,4 +200,19 @@
         -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr); }
       .barra-superior .mas-iconos-derecha .se-va {
-        display: none; } }
+        display: none; }
+  .browser-videos .paquete-horizontal {
+    margin: 0 20px;
+    padding: 40px 60px; }
+    .browser-videos .paquete-horizontal .cabecera-paquete {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a img {
+        padding-top: 5px; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .mensaje-cabecera {
+        display: none; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .btn-suscribete {
+        display: none; }
+    .browser-videos .paquete-horizontal .coleccion-tarjetas-in {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }

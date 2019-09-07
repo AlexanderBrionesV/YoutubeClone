@@ -94,8 +94,102 @@ $lado: 30px;
     border-radius: $lado/2
 }
 
+.img-rectangulo {
+    // imgane normal solo dale tamaño
+    width: 210px;
+    height: 120px;
+}
+
+.no-decor {
+    text-decoration: none;
+    color: $cl-letra;
+}
+
 // -------------------------nav izquierdo-------------
 // -
+.browser-videos {
+    .paquete-horizontal {
+        padding: 30px;
+        .cabecera-paquete {
+            display: grid;
+            // grid-template-columns: 3fr 4fr 6fr 2fr;
+            background: $back;
+            align-content: center;
+            justify-content: center;
+            .titulo-canal-ARRIBA {
+                a {
+                    // grid-column: 1/2;
+                    font-family: $lt-titulo;
+                    text-decoration: none;
+                    font-size: 1.7rem;
+                    color: $cl-letra;
+                    img {
+                        padding-top: 5px;
+                    }
+                }
+            }
+            .mensaje-cabecera {
+                // grid-column: 2/3;
+                color: $cl-letra;
+                font-family: $lt-varios;
+            }
+            .btn-suscribete {
+                // grid-column: 4/5;
+                color: $cl-letra;
+                font-family: $lt-varios;
+            }
+        }
+        .coleccion-tarjetas-in {
+            display: grid;
+            // grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 15px;
+            .tarjeta-individual {
+                padding: 9px;
+                background: /* yellow */
+                $back;
+                a {
+                    img {
+                        //rectangular
+                    }
+                }
+                .detalles-tarjeta {
+                    display: grid;
+                    margin: 5px 0;
+                    grid-template-rows: 1fr 60px;
+                    h3 {
+                        margin: 3px 0;
+                        a {
+                            margin: 5px 0;
+                            text-decoration: none;
+                            color: $cl-letra;
+                            font-family: $lt-titulo;
+                            font-size: 15px
+                        }
+                    }
+                    .metadatos-canal {
+                        // display: grid;
+                        // grid-template-rows: 1fr1 fr;
+                        text-decoration: none;
+                        color: $cl-letra;
+                        font-family: $lt-varios;
+                        h4 {
+                            margin-top: 2px;
+                            color: $cl-iconos;
+                            font-size: 11px
+                        }
+                        .metadatos-vistas-time {
+                            display: grid;
+                            grid-template-rows: 18px 18px;
+                            font-size: 11px;
+                            margin-top: -18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // -
 // -
 // -
@@ -104,7 +198,8 @@ $lado: 30px;
 // -----------------------LARGE VERSION---------------------------
 @media (min-width:700px) {
     body {
-        background: red;
+        background: $cl-negro;
+        /* rgba(blue, 0.2) */
     }
     .barra-superior {
         grid-template-columns: 2fr 4fr 3fr;
@@ -130,12 +225,54 @@ $lado: 30px;
         }
     }
     // -------------------------nav izquierdo-------------
+    // -------------------------nav izquierdo-------------
+    .browser-videos {
+        .paquete-horizontal {
+            .cabecera-paquete {
+                grid-template-columns: 3fr 4fr 6fr 2fr;
+                .titulo-canal-ARRIBA {
+                    a {
+                        grid-column: 1/2;
+                        img {
+                            padding-top: 5px;
+                        }
+                    }
+                }
+                .mensaje-cabecera {
+                    grid-column: 2/3;
+                }
+                .btn-suscribete {
+                    grid-column: 4/5;
+                }
+            }
+            .coleccion-tarjetas-in {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                .tarjeta-individual {
+                    a {
+                        img {
+                            //rectangular
+                        }
+                    }
+                    .detalles-tarjeta {
+                        h3 {}
+                        .metadatos-canal {
+                            h4 {}
+                            .metadatos-vistas-time {
+                                span {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // -----------------------SHORT VERSION---------------------------
 @media (max-width:700px) {
     body {
-        background: blue;
+        // background: blue;
+        background: $back;
     }
     .barra-superior {
         grid-template-columns: 3fr .5fr 2fr;
@@ -160,4 +297,47 @@ $lado: 30px;
         }
     }
     // -------------------------nav izquierdo-------------
+    // -------------------------nav izquierdo-------------
+    // -
+    .browser-videos {
+        .paquete-horizontal {
+            margin: 0 20px;
+            padding: 40px 60px;
+            .cabecera-paquete {
+                grid-template-columns: 1fr;
+                .titulo-canal-ARRIBA {
+                    a {
+                        img {
+                            padding-top: 5px;
+                        }
+                    }
+                }
+                .mensaje-cabecera {
+                    display: none;
+                }
+                .btn-suscribete {
+                    display: none;
+                }
+            }
+            .coleccion-tarjetas-in {
+                grid-template-columns: 1fr;
+                .tarjeta-individual {
+                    a {
+                        img {
+                            //rectangular
+                        }
+                    }
+                    .detalles-tarjeta {
+                        h3 {}
+                        .metadatos-canal {
+                            h4 {}
+                            .metadatos-vistas-time {
+                                span {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
