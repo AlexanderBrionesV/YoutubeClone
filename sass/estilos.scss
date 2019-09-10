@@ -5,24 +5,153 @@ $cl-letra: rgb(248, 248, 248);
 $cl-ico-blanco:rgb(242, 248, 250);
 // ------------------------
 $lado: 30px;
+$ancho-general: 210px;
 // ------------------------
 @import "letras";
+// ------------------------
+// ------------------------
+@mixin barra-superior-small {
+    .barra-superior {
+        grid-template-columns: 3fr .5fr 2fr;
+        .logo {
+            grid-template-columns: 1fr 3fr;
+        }
+        .buscador {
+            display: grid;
+            grid-template-columns: 3fr 0.5fr;
+            .contenedor-buqueda {
+                display: none;
+            }
+        }
+        .mas-iconos-derecha {
+            grid-template-columns: 2fr 1fr;
+            .solo-iconos-s-d {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .se-va {
+                display: none;
+            }
+        }
+    }
+}
+
+@mixin barra-superior-large {
+    .barra-superior {
+        grid-template-columns: 2fr 4fr 3fr;
+        .logo {
+            grid-template-columns: 1fr 3fr;
+        }
+        .buscador {
+            display: grid;
+            grid-template-columns: 3fr 0.5fr;
+            .contenedor-buqueda {
+                .buscar-box {
+                    width: 100%; //23rem;
+                    height: 80%;
+                    margin-top: 0px;
+                    // &:hover {
+                    //     border: 1px solid $cl-iconos;
+                    //     box-shadow: 0 0 3px #062df1;
+                    //     outline: 0
+                    // }
+                }
+            }
+            .lupa-c {
+                .lupa {
+                    padding-left: 2rem;
+                }
+            }
+        }
+        .mas-iconos-derecha {
+            grid-template-columns: 4fr 1fr;
+            .solo-iconos-s-d {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .se-va {}
+        }
+    }
+}
+
+// ------------------------
+@mixin divisiones-cabecera($segundo-v, $no, $no2, $frame-cantidad, $min-render-width) {
+    // align-content: center;
+    // justify-content: center;
+    .paquete-horizontal {
+        width: 100%;
+        max-width: $min-render-width;
+        margin: 20px auto;
+        .cabecera-paquete {
+            grid-template-columns: 1fr/* 3fr */
+            '$segundo-v' 2fr;
+            .titulo-canal-ARRIBA {
+                a {
+                    margin-left: 9px;
+                    grid-column: 1/2;
+                    img {
+                        // padding-top: 5px;
+                    }
+                }
+            }
+            .mensaje-cabecera {
+                grid-column: 2/3;
+                display: $no;
+                align-content: center;
+                justify-content: left;
+            }
+            .btn-suscribete {
+                margin-right: 9px;
+                grid-column: 3/4;
+                display: $no2;
+                align-content: center;
+                justify-content: right;
+            }
+        }
+        .coleccion-tarjetas-in {
+            display: grid;
+            grid-template-columns: repeat(210px, $frame-cantidad);
+            // width: 100%;
+            // max-width: $min-render-width;
+            // margin: 20px auto;
+        }
+    }
+}
+
+// ------------------------
 // ------------------------
 .toda-la-ventana {
     margin-top: -8px;
     margin-left: -8px;
     margin-right: -8px;
-    // padding: 10px 0;
+    min-width: 300px;
+    // display: grid;
+    // grid-template-columns: 1fr;
+}
+
+.img-cicle {
+    width: $lado;
+    height: $lado;
+    border-radius: $lado/2
+}
+
+.img-rectangulo {
+    width: $ancho-general;
+    height: 120px;
+    /*   width: 15rem;
+    height: 10rem; */
+}
+
+.no-decor {
+    text-decoration: none;
+    color: $cl-letra;
 }
 
 .barra-superior {
     background: $back;
+    padding-right: 30px;
+    padding-left: 30px;
     display: grid;
     // grid-template-columns: 3fr .5fr 2fr;
     grid-gap: 5px;
-    // padding-left: .5rem;
-    // padding-right: .5rem;
-    // padding-top: 10px;
     padding: 10px;
     .logo {
         display: grid;
@@ -88,44 +217,36 @@ $lado: 30px;
     }
 }
 
-.img-cicle {
-    width: $lado;
-    height: $lado;
-    border-radius: $lado/2
-}
-
-.img-rectangulo {
-    // imgane normal solo dale tamaño
-    width: 210px;
-    height: 120px;
-}
-
-.no-decor {
-    text-decoration: none;
-    color: $cl-letra;
-}
-
-// -------------------------nav izquierdo-------------
-// -
 .browser-videos {
+    // margin-left: 8rem;
+    // margin-right: 8rem;
+    // -----arrbia--costados
+    // margin: 1rem 20%;
+    // display: flex;
+    align-content: center;
+    justify-content: center;
     .paquete-horizontal {
-        padding: 30px;
+        margin: 0rem 0rem;
+        display: grid;
+        grid-template-columns: 1fr;
         .cabecera-paquete {
             display: grid;
-            // grid-template-columns: 3fr 4fr 6fr 2fr;
             background: $back;
-            align-content: center;
-            justify-content: center;
+            margin: 0rem 0rem;
             .titulo-canal-ARRIBA {
                 a {
-                    // grid-column: 1/2;
-                    font-family: $lt-titulo;
-                    text-decoration: none;
-                    font-size: 1.7rem;
-                    color: $cl-letra;
-                    img {
-                        padding-top: 5px;
+                    display: flex;
+                    align-content: center;
+                    span {
+                        // align-content: center;
+                        padding-top: 4px;
+                        padding-left: 4px;
+                        font-family: $lt-titulo;
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: $cl-letra;
                     }
+                    img {}
                 }
             }
             .mensaje-cabecera {
@@ -142,11 +263,15 @@ $lado: 30px;
         .coleccion-tarjetas-in {
             display: grid;
             // grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-gap: 15px;
+            // grid-gap: 5px;
             .tarjeta-individual {
+                display: grid;
+                grid-template-columns: $ancho-general;
                 padding: 9px;
-                background: /* yellow */
-                $back;
+                // align-content: center;
+                // justify-content: center;
+                // --------------
+                background: $back;
                 a {
                     img {
                         //rectangular
@@ -174,6 +299,7 @@ $lado: 30px;
                         font-family: $lt-varios;
                         h4 {
                             margin-top: 2px;
+                            margin-bottom: 4px;
                             color: $cl-iconos;
                             font-size: 11px
                         }
@@ -181,7 +307,7 @@ $lado: 30px;
                             display: grid;
                             grid-template-rows: 18px 18px;
                             font-size: 11px;
-                            margin-top: -18px;
+                            // margin-top: -18px;
                         }
                     }
                 }
@@ -190,154 +316,77 @@ $lado: 30px;
     }
 }
 
-// -
-// -
-// -
-// -
-// -
-// -----------------------LARGE VERSION---------------------------
-@media (min-width:700px) {
+// -------------1000+----------
+@media (min-width:1000px) {
     body {
-        background: $cl-negro;
-        /* rgba(blue, 0.2) */
+        background: $back/* green */
+        ;
     }
-    .barra-superior {
-        grid-template-columns: 2fr 4fr 3fr;
-        .logo {
-            grid-template-columns: 1fr 3fr;
-        }
-        .buscador {
-            display: grid;
-            grid-template-columns: 3fr 0.5fr;
-            .contenedor-buqueda {
-                .buscar-box {
-                    width: 23rem;
-                    margin-top: 5px;
-                }
-            }
-        }
-        .mas-iconos-derecha {
-            grid-template-columns: 4fr 1fr;
-            .solo-iconos-s-d {
-                grid-template-columns: repeat(4, 1fr);
-            }
-            .se-va {}
-        }
+    @include barra-superior-large;
+    .coleccion-tarjetas-in {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    // -------------------------nav izquierdo-------------
-    // -------------------------nav izquierdo-------------
     .browser-videos {
-        .paquete-horizontal {
-            .cabecera-paquete {
-                grid-template-columns: 3fr 4fr 6fr 2fr;
-                .titulo-canal-ARRIBA {
-                    a {
-                        grid-column: 1/2;
-                        img {
-                            padding-top: 5px;
-                        }
-                    }
-                }
-                .mensaje-cabecera {
-                    grid-column: 2/3;
-                }
-                .btn-suscribete {
-                    grid-column: 4/5;
-                }
-            }
-            .coleccion-tarjetas-in {
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                .tarjeta-individual {
-                    a {
-                        img {
-                            //rectangular
-                        }
-                    }
-                    .detalles-tarjeta {
-                        h3 {}
-                        .metadatos-canal {
-                            h4 {}
-                            .metadatos-vistas-time {
-                                span {}
-                            }
-                        }
-                    }
-                }
-            }
+        // display: block;
+        @include divisiones-cabecera( 7rem, flex, flex, 4, 920px);
+    }
+}
+
+// ------//750---1000---
+@media (min-width:720px) {
+    @media (max-width: 999px) {
+        body {
+            background: $back/* red */
+            ;
+        }
+        @include barra-superior-large;
+        .coleccion-tarjetas-in {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .browser-videos {
+            @include divisiones-cabecera( 4rem, none, flex, 3, 690px);
         }
     }
 }
 
-// -----------------------SHORT VERSION---------------------------
-@media (max-width:700px) {
+// ------//500---750---
+@media (min-width:480px) {
+    @media (max-width: 719px) {
+        body {
+            background: $back/* blue */
+            ;
+        }
+        @include barra-superior-small;
+        // -----------------------------
+        // -----------------------------
+        // -----------------------------G
+        .coleccion-tarjetas-in {
+            grid-template-columns: 1fr 1fr;
+        }
+        .browser-videos {
+            @include divisiones-cabecera( 1rem, none, flex, 2, 460px);
+        }
+    }
+}
+
+@media (max-width: 480px) {
     body {
-        // background: blue;
-        background: $back;
+        background: $back/* yellow */
+        ;
     }
-    .barra-superior {
-        grid-template-columns: 3fr .5fr 2fr;
-        .logo {
-            grid-template-columns: 1fr 3fr;
-        }
-        .buscador {
-            display: grid;
-            grid-template-columns: 3fr 0.5fr;
-            .contenedor-buqueda {
-                display: none;
-            }
-        }
-        .mas-iconos-derecha {
-            grid-template-columns: 2fr 1fr;
-            .solo-iconos-s-d {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .se-va {
-                display: none;
-            }
-        }
+    @include barra-superior-small;
+    .paquete-horizontal {
+        max-width: 230px;
     }
-    // -------------------------nav izquierdo-------------
-    // -------------------------nav izquierdo-------------
-    // -
+    .cabecera-paquete {
+        width: 230px;
+    }
+    .coleccion-tarjetas-in {
+        grid-template-columns: 230px;
+    }
     .browser-videos {
-        .paquete-horizontal {
-            margin: 0 20px;
-            padding: 40px 60px;
-            .cabecera-paquete {
-                grid-template-columns: 1fr;
-                .titulo-canal-ARRIBA {
-                    a {
-                        img {
-                            padding-top: 5px;
-                        }
-                    }
-                }
-                .mensaje-cabecera {
-                    display: none;
-                }
-                .btn-suscribete {
-                    display: none;
-                }
-            }
-            .coleccion-tarjetas-in {
-                grid-template-columns: 1fr;
-                .tarjeta-individual {
-                    a {
-                        img {
-                            //rectangular
-                        }
-                    }
-                    .detalles-tarjeta {
-                        h3 {}
-                        .metadatos-canal {
-                            h4 {}
-                            .metadatos-vistas-time {
-                                span {}
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        // @include margen-escalable(20%);
+        // $porcion: calc(width-(2*210))/2;
+        @include divisiones-cabecera( 1rem, none, none, 1, 230px);
     }
 }

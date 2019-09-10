@@ -1,10 +1,28 @@
 .toda-la-ventana {
   margin-top: -8px;
   margin-left: -8px;
-  margin-right: -8px; }
+  margin-right: -8px;
+  min-width: 300px; }
+
+.img-cicle {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px; }
+
+.img-rectangulo {
+  width: 210px;
+  height: 120px;
+  /*   width: 15rem;
+    height: 10rem; */ }
+
+.no-decor {
+  text-decoration: none;
+  color: #f8f8f8; }
 
 .barra-superior {
   background: #0e0702;
+  padding-right: 30px;
+  padding-left: 30px;
   display: -ms-grid;
   display: grid;
   grid-gap: 5px;
@@ -58,84 +76,85 @@
         color: #00e1ff;
         margin-left: 15px; }
 
-.img-cicle {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px; }
-
-.img-rectangulo {
-  width: 210px;
-  height: 120px; }
-
-.no-decor {
-  text-decoration: none;
-  color: #f8f8f8; }
-
-.browser-videos .paquete-horizontal {
-  padding: 30px; }
-  .browser-videos .paquete-horizontal .cabecera-paquete {
+.browser-videos {
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .browser-videos .paquete-horizontal {
+    margin: 0rem 0rem;
     display: -ms-grid;
     display: grid;
-    background: #0e0702;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a {
-      font-family: "Asap Condensed", sans-serif;
-      text-decoration: none;
-      font-size: 1.7rem;
-      color: #f8f8f8; }
-      .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a img {
-        padding-top: 5px; }
-    .browser-videos .paquete-horizontal .cabecera-paquete .mensaje-cabecera {
-      color: #f8f8f8;
-      font-family: "Niramit", sans-serif; }
-    .browser-videos .paquete-horizontal .cabecera-paquete .btn-suscribete {
-      color: #f8f8f8;
-      font-family: "Niramit", sans-serif; }
-  .browser-videos .paquete-horizontal .coleccion-tarjetas-in {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 15px; }
-    .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual {
-      padding: 9px;
-      background: #0e0702; }
-      .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+    .browser-videos .paquete-horizontal .cabecera-paquete {
+      display: -ms-grid;
+      display: grid;
+      background: #0e0702;
+      margin: 0rem 0rem; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center; }
+        .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a span {
+          padding-top: 4px;
+          padding-left: 4px;
+          font-family: "Asap Condensed", sans-serif;
+          text-decoration: none;
+          font-size: 20px;
+          color: #f8f8f8; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .mensaje-cabecera {
+        color: #f8f8f8;
+        font-family: "Niramit", sans-serif; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .btn-suscribete {
+        color: #f8f8f8;
+        font-family: "Niramit", sans-serif; }
+    .browser-videos .paquete-horizontal .coleccion-tarjetas-in {
+      display: -ms-grid;
+      display: grid; }
+      .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual {
         display: -ms-grid;
         display: grid;
-        margin: 5px 0;
-        -ms-grid-rows: 1fr 60px;
-        grid-template-rows: 1fr 60px; }
-        .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta h3 {
-          margin: 3px 0; }
-          .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta h3 a {
-            margin: 5px 0;
+        -ms-grid-columns: 210px;
+        grid-template-columns: 210px;
+        padding: 9px;
+        background: #0e0702; }
+        .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta {
+          display: -ms-grid;
+          display: grid;
+          margin: 5px 0;
+          -ms-grid-rows: 1fr 60px;
+          grid-template-rows: 1fr 60px; }
+          .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta h3 {
+            margin: 3px 0; }
+            .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta h3 a {
+              margin: 5px 0;
+              text-decoration: none;
+              color: #f8f8f8;
+              font-family: "Asap Condensed", sans-serif;
+              font-size: 15px; }
+          .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta .metadatos-canal {
             text-decoration: none;
             color: #f8f8f8;
-            font-family: "Asap Condensed", sans-serif;
-            font-size: 15px; }
-        .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta .metadatos-canal {
-          text-decoration: none;
-          color: #f8f8f8;
-          font-family: "Niramit", sans-serif; }
-          .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta .metadatos-canal h4 {
-            margin-top: 2px;
-            color: #00e1ff;
-            font-size: 11px; }
-          .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta .metadatos-canal .metadatos-vistas-time {
-            display: -ms-grid;
-            display: grid;
-            -ms-grid-rows: 18px 18px;
-            grid-template-rows: 18px 18px;
-            font-size: 11px;
-            margin-top: -18px; }
+            font-family: "Niramit", sans-serif; }
+            .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta .metadatos-canal h4 {
+              margin-top: 2px;
+              margin-bottom: 4px;
+              color: #00e1ff;
+              font-size: 11px; }
+            .browser-videos .paquete-horizontal .coleccion-tarjetas-in .tarjeta-individual .detalles-tarjeta .metadatos-canal .metadatos-vistas-time {
+              display: -ms-grid;
+              display: grid;
+              -ms-grid-rows: 18px 18px;
+              grid-template-rows: 18px 18px;
+              font-size: 11px; }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   body {
-    background: #0e0702;
-    /* rgba(blue, 0.2) */ }
+    background: #0e0702; }
   .barra-superior {
     -ms-grid-columns: 2fr 4fr 3fr;
     grid-template-columns: 2fr 4fr 3fr; }
@@ -148,36 +167,134 @@
       -ms-grid-columns: 3fr 0.5fr;
       grid-template-columns: 3fr 0.5fr; }
       .barra-superior .buscador .contenedor-buqueda .buscar-box {
-        width: 23rem;
-        margin-top: 5px; }
+        width: 100%;
+        height: 80%;
+        margin-top: 0px; }
+      .barra-superior .buscador .lupa-c .lupa {
+        padding-left: 2rem; }
     .barra-superior .mas-iconos-derecha {
       -ms-grid-columns: 4fr 1fr;
       grid-template-columns: 4fr 1fr; }
       .barra-superior .mas-iconos-derecha .solo-iconos-s-d {
         -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr); }
-  .browser-videos .paquete-horizontal .cabecera-paquete {
-    -ms-grid-columns: 3fr 4fr 6fr 2fr;
-    grid-template-columns: 3fr 4fr 6fr 2fr; }
-    .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a {
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 1;
-      grid-column: 1/2; }
-      .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a img {
-        padding-top: 5px; }
-    .browser-videos .paquete-horizontal .cabecera-paquete .mensaje-cabecera {
-      -ms-grid-column: 2;
-      -ms-grid-column-span: 1;
-      grid-column: 2/3; }
-    .browser-videos .paquete-horizontal .cabecera-paquete .btn-suscribete {
-      -ms-grid-column: 4;
-      -ms-grid-column-span: 1;
-      grid-column: 4/5; }
-  .browser-videos .paquete-horizontal .coleccion-tarjetas-in {
+  .coleccion-tarjetas-in {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .browser-videos .paquete-horizontal {
+    width: 100%;
+    max-width: 920px;
+    margin: 20px auto; }
+    .browser-videos .paquete-horizontal .cabecera-paquete {
+      -ms-grid-columns: 1fr "$segundo-v" 2fr;
+      grid-template-columns: 1fr "$segundo-v" 2fr; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a {
+        margin-left: 9px;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+        grid-column: 1/2; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .mensaje-cabecera {
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+        grid-column: 2/3;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .btn-suscribete {
+        margin-right: 9px;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+        grid-column: 3/4;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: right;
+        -ms-flex-pack: right;
+        justify-content: right; }
+    .browser-videos .paquete-horizontal .coleccion-tarjetas-in {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (4)[210px];
+      grid-template-columns: repeat(210px, 4); } }
 
-@media (max-width: 700px) {
+@media (min-width: 720px) and (max-width: 999px) {
+  body {
+    background: #0e0702; }
+  .barra-superior {
+    -ms-grid-columns: 2fr 4fr 3fr;
+    grid-template-columns: 2fr 4fr 3fr; }
+    .barra-superior .logo {
+      -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr; }
+    .barra-superior .buscador {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 3fr 0.5fr;
+      grid-template-columns: 3fr 0.5fr; }
+      .barra-superior .buscador .contenedor-buqueda .buscar-box {
+        width: 100%;
+        height: 80%;
+        margin-top: 0px; }
+      .barra-superior .buscador .lupa-c .lupa {
+        padding-left: 2rem; }
+    .barra-superior .mas-iconos-derecha {
+      -ms-grid-columns: 4fr 1fr;
+      grid-template-columns: 4fr 1fr; }
+      .barra-superior .mas-iconos-derecha .solo-iconos-s-d {
+        -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr); }
+  .coleccion-tarjetas-in {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; }
+  .browser-videos .paquete-horizontal {
+    width: 100%;
+    max-width: 690px;
+    margin: 20px auto; }
+    .browser-videos .paquete-horizontal .cabecera-paquete {
+      -ms-grid-columns: 1fr "$segundo-v" 2fr;
+      grid-template-columns: 1fr "$segundo-v" 2fr; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a {
+        margin-left: 9px;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+        grid-column: 1/2; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .mensaje-cabecera {
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+        grid-column: 2/3;
+        display: none;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .btn-suscribete {
+        margin-right: 9px;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+        grid-column: 3/4;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: right;
+        -ms-flex-pack: right;
+        justify-content: right; }
+    .browser-videos .paquete-horizontal .coleccion-tarjetas-in {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (3)[210px];
+      grid-template-columns: repeat(210px, 3); } }
+
+@media (min-width: 480px) and (max-width: 719px) {
   body {
     background: #0e0702; }
   .barra-superior {
@@ -201,18 +318,116 @@
         grid-template-columns: repeat(2, 1fr); }
       .barra-superior .mas-iconos-derecha .se-va {
         display: none; }
+  .coleccion-tarjetas-in {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; }
   .browser-videos .paquete-horizontal {
-    margin: 0 20px;
-    padding: 40px 60px; }
+    width: 100%;
+    max-width: 460px;
+    margin: 20px auto; }
     .browser-videos .paquete-horizontal .cabecera-paquete {
-      -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr; }
-      .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a img {
-        padding-top: 5px; }
+      -ms-grid-columns: 1fr "$segundo-v" 2fr;
+      grid-template-columns: 1fr "$segundo-v" 2fr; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a {
+        margin-left: 9px;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+        grid-column: 1/2; }
       .browser-videos .paquete-horizontal .cabecera-paquete .mensaje-cabecera {
-        display: none; }
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+        grid-column: 2/3;
+        display: none;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left; }
       .browser-videos .paquete-horizontal .cabecera-paquete .btn-suscribete {
-        display: none; }
+        margin-right: 9px;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+        grid-column: 3/4;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: right;
+        -ms-flex-pack: right;
+        justify-content: right; }
     .browser-videos .paquete-horizontal .coleccion-tarjetas-in {
-      -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr; } }
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (2)[210px];
+      grid-template-columns: repeat(210px, 2); } }
+
+@media (max-width: 480px) {
+  body {
+    background: #0e0702; }
+  .barra-superior {
+    -ms-grid-columns: 3fr .5fr 2fr;
+    grid-template-columns: 3fr .5fr 2fr; }
+    .barra-superior .logo {
+      -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr; }
+    .barra-superior .buscador {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 3fr 0.5fr;
+      grid-template-columns: 3fr 0.5fr; }
+      .barra-superior .buscador .contenedor-buqueda {
+        display: none; }
+    .barra-superior .mas-iconos-derecha {
+      -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr; }
+      .barra-superior .mas-iconos-derecha .solo-iconos-s-d {
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr); }
+      .barra-superior .mas-iconos-derecha .se-va {
+        display: none; }
+  .paquete-horizontal {
+    max-width: 230px; }
+  .cabecera-paquete {
+    width: 230px; }
+  .coleccion-tarjetas-in {
+    -ms-grid-columns: 230px;
+    grid-template-columns: 230px; }
+  .browser-videos .paquete-horizontal {
+    width: 100%;
+    max-width: 230px;
+    margin: 20px auto; }
+    .browser-videos .paquete-horizontal .cabecera-paquete {
+      -ms-grid-columns: 1fr "$segundo-v" 2fr;
+      grid-template-columns: 1fr "$segundo-v" 2fr; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .titulo-canal-ARRIBA a {
+        margin-left: 9px;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+        grid-column: 1/2; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .mensaje-cabecera {
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+        grid-column: 2/3;
+        display: none;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left; }
+      .browser-videos .paquete-horizontal .cabecera-paquete .btn-suscribete {
+        margin-right: 9px;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+        grid-column: 3/4;
+        display: none;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: right;
+        -ms-flex-pack: right;
+        justify-content: right; }
+    .browser-videos .paquete-horizontal .coleccion-tarjetas-in {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1)[210px];
+      grid-template-columns: repeat(210px, 1); } }

@@ -1,0 +1,76 @@
+<div class="coleccion-tarjetas-in">
+                    <!--todas las tarjetas que se desplazan -->
+                    <div class="tarjeta-individual">
+                        <a href="">
+                            <img src="https://i.ytimg.com/vi/OORoOGY8D2M/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBteUHHY5T_NRyhYi6WoIUFzl7eXA" alt="" class="img-rectangulo">
+                        </a>
+                        <div class="detalles-tarjeta">
+                            <h3><a href="">Cheat Codes x Kris Kross Amsterdam - SEX </a></h3>
+                            <div class="metadatos-canal">
+                                <h4>Spinin' Records</h4>
+                                <div class="metadatos-vistas-time">
+                                    <span>152M visualizaciones</span>
+                                    <span>hace 2años</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--t-------apenas 1 tarjeta-------- -->
+                    <!--todas las tarjetas que se desplazan -->
+                    <div class="tarjeta-individual">
+                        <a href="">
+                            <img src="https://i.ytimg.com/vi/i5getrSq6G8/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCj211RTh4jNDwZfIOCkuj-qWJNQw" alt="" class="img-rectangulo">
+                        </a>
+                        <div class="detalles-tarjeta">
+                            <h3><a href="">R3hab & Trevor Guthrie - SoundWave (Official Music Video) </a></h3>
+                            <div class="metadatos-canal">
+                                <h4>Spinin' Records</h4>
+                                <div class="metadatos-vistas-time">
+                                    <span>34M visualizaciones</span>
+                                    <span>hace 4 años</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--t-------apenas 1 tarjeta-------- -->
+                    <!--todas las tarjetas que se desplazan -->
+                    <div class="tarjeta-individual">
+                        <a href="">
+                            <img src="https://i.ytimg.com/vi/gCYcHz2k5x0/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDDrjVsZCGjsQ3vegDO4FJbb1HvnA" alt="" class="img-rectangulo">
+                        </a>
+                        <div class="detalles-tarjeta">
+                            <h3><a href="">Martin Garrix - Animals (Official Video) </a></h3>
+                            <div class="metadatos-canal">
+                                <h4>Dimitri Vegas & Like Mike</h4>
+
+
+
+                                <div class="metadatos-vistas-time">
+                                    <span>1300 M visualizaciones </span>
+                                    <span>hace 6 años</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--t-------apenas 1 tarjeta-------- -->
+                    <!--todas las tarjetas que se desplazan -->
+                    <div class="tarjeta-individual">
+                        <a href="">
+                            <img src="https://i.ytimg.com/vi/_o-XIryB2gg/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD8hbSGNTjik-7fmzbq5550els9-w" alt="" class="img-rectangulo">
+                        </a>
+                        <div class="detalles-tarjeta">
+                            <h3><a href="">Dimitri Vegas, MOGUAI & Like Mike - Mammoth </a></h3>
+                            <div class="metadatos-canal">
+                                <h4>Spinnin' Records</h4>
+
+
+
+                                <div class="metadatos-vistas-time">
+                                    <span>142 M visualizaciones </span>
+                                    <span>hace 6 años</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--t-------apenas 1 tarjeta-------- -->
+                </div>
